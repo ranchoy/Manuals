@@ -74,3 +74,34 @@
    [--author=user-name](指定作者日志) [--before={YYYY-MM-dd}](指定日期前日志) [--after={YYYY-MM-dd}](指定日期后日志)
    查看指定文件修改记录：git blame [file-name]
    ```
+
+5. Git的其它指令
+
+   - 文件或目录的重命名
+
+     ```
+     git mv [file-name] [new-file-name]
+     ```
+
+   - 远程文件删除：执行远程删除指令，再通过文件提交指令上传至远程仓库。
+
+     ```
+     git rm [-r] --cached [file-name|path-name]
+     git add .
+     git commit -m [message]
+     git push -u origin main
+     ```
+
+   - 提交版本回退
+
+     ```
+     $ git reset HEAD^          # 回退所有内容到前一版本  
+     $ git reset HEAD^ test.txt # 回退test.txt文件到前一版本  
+     $ git reset [commit-flags] # 回退到指定版本
+     $ git reset --soft HEAD~3  # 回退上上上一个版本
+     $ git reset --hard [commit-id] # 回退到某个版本回退点之前的所有信息
+     $ git reset --hard origin/master # 将本地的状态回退到和远程的一样
+     注：[commit-id]为日志中提交记录的ID标识。
+     ```
+
+   - 
