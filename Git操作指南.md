@@ -61,7 +61,7 @@
    切换分支：git checkout [new-branch-name]
    合并分支：git merge [branch-name]
    删除分支：git branch -d [branch-name]
-   修改分支名称：git branch -M [new-branch-name]
+   修改分支名称：git branch -m [new-branch-name]
    创建并切换分支：git checkout -b [new-branch-name]
    ```
 
