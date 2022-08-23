@@ -61,8 +61,11 @@
    切换分支：git checkout [new-branch-name]
    合并分支：git merge [branch-name]
    删除分支：git branch -d [branch-name]
+   强制删除分支：git branch -D [branch-name]
    修改分支名称：git branch -m [new-branch-name]
    创建并切换分支：git checkout -b [new-branch-name]
+   列举远程分支：git branch -a
+   删除远程分支：git push origin --delete [branch-name]
    ```
 
 4. Git的日志管理
