@@ -98,8 +98,8 @@
    - 提交版本回退
 
      ```
-     $ git reset HEAD^          # 回退所有内容到前一版本  
-     $ git reset HEAD^ test.txt # 回退test.txt文件到前一版本  
+     $ git reset HEAD^          # 回退所有内容到前一版本 
+     $ git reset HEAD^ test.txt # 回退test.txt文件到前一版本
      $ git reset [commit-flags] # 回退到指定版本
      $ git reset --soft HEAD~3  # 回退上上上一个版本
      $ git reset --hard [commit-id] # 回退到某个版本回退点之前的所有信息
